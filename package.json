@@ -1,0 +1,29 @@
+{
+  "name": "foodhub",
+  "version": "1.0.0",
+  "description": "Premium Food Ordering Platform - Production Ready",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "food",
+    "ordering",
+    "delivery",
+    "restaurant",
+    "ecommerce",
+    "zomato",
+    "uber-eats",
+    "swiggy"
+  ],
+  "author": "Dharani",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
